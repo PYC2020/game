@@ -9,6 +9,7 @@ import java.util.Enumeration;
 public class NetworkInterfaceTest {
 	public String  getIp() throws SocketException {
 		// 获得本机的所有网络接口
+		
 				Enumeration<NetworkInterface> nifs = NetworkInterface.getNetworkInterfaces();
 				while (nifs.hasMoreElements()) {
 					NetworkInterface nif = nifs.nextElement();
